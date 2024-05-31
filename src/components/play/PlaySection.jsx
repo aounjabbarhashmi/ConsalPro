@@ -11,22 +11,22 @@ function PlaySection() {
           className="absolute max-w-[300px] w-full top-[80%] left-28"
           alt=""
         />
-        <div className="absolute max-w-[600px] flex items-center gap-20 py-20 px-9 rounded-md w-full top-[70%] right-0 bg-[#1A1717] ">
-          <div className="w-[200px] flex flex-col items-end  gap-20">
+        <div className="absolute max-w-[600px] flex items-center gap-20 py-24 px-16 rounded-md w-full top-[70%] right-0 bg-[#1A1717] ">
+          <div className="max-w-[200px] flex flex-col items-end  gap-16">
             <img
               src="./images/Ellipse 29.png"
-              className="w-[60%] mr-[-30px]"
+              className="w-[60%] mr-[-20px]"
               alt=""
             />
             <img src="./images/Ellipse 156.png" alt="" />
             <img
               src="./images/Ellipse 157.png"
-              className="w-[60%] mr-[-30px]"
+              className="w-[60%] mr-[-20px]"
               alt=""
             />
           </div>
-          <div className=" flex flex-col  text-left">
-            <p className="text-[1.8rem] text-[#B0B0B0]">
+          <div className=" flex flex-col gap-4  text-left">
+            <p className="text-[1.8rem] text-[#B0B0B0] max-w-[350px]">
               I have been a loyal customer of this auto parts company for years
               and I cannot recommend them enough. Their extensive selection of
               high-quality parts and accessories, combined with their
@@ -37,11 +37,21 @@ function PlaySection() {
               Marvin McKinney
               <h6 className="text-[1.4rem] text-[#B0B0B0]">Web designer</h6>
             </h1>
-            <div className="flex justify-between">
+            <div className="flex justify-between items-start">
               {" "}
               <div className="flex ">
-                <img src="./images/icon.png" width={50}  className="aspect-square" alt="" />
-                <img src="./images/icon.png" width={50} className="aspect-square rotate-180" alt="" />
+                <img
+                  src="./images/icon.png"
+                  width={50}
+                  className="aspect-square"
+                  alt=""
+                />
+                <img
+                  src="./images/icon.png"
+                  width={50}
+                  className="aspect-square rotate-180"
+                  alt=""
+                />
               </div>
               <img
                 width={100}
