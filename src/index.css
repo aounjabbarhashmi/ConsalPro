@@ -19,7 +19,7 @@
 html,
 body {
   overflow-x: hidden;
-  font-size: clamp(1px, calc(0.5vw), 9px);
+  font-size: clamp(5px, calc(0.5vw), 9px);
 }
 body {
   min-width: 320px;

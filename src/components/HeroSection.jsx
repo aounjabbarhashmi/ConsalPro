@@ -2,7 +2,7 @@ function HeroSection() {
   return (
     <header className="text-white w-[70%] mx-auto   py-[40px] ">
       {/* main hero section title  */}
-      <h1 className="text-left  text-[14rem]   font-bold uppercase leading-[15rem]">
+      <h1 className="text-left  text-[14rem]  max-sm:text-[8rem] font-bold uppercase leading-[15rem]">
         <span className="flex  gap-12">
           {" "}
           We are{" "}
@@ -21,7 +21,7 @@ function HeroSection() {
           />
         </span>
         <br />
-        <span className="text-[10rem] font-[400] word tracking-[0.7em]">
+        <span className="text-[10rem] font-[400] word max-sm:tracking-normal tracking-[0.7em]">
           {" "}
           agency
         </span>
