@@ -9,8 +9,22 @@
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: transparent;
   }
-.stroke-text2 {
+  .stroke-text2 {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.199);
     -webkit-text-fill-color: transparent;
   }
+}
+
+@keyframes bounce-once {
+  0% {
+    transform: translateY(-125%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+ 
+}
+.bounce-once {
+  animation: bounce-once 0.76s ease-in-out 1;
 }

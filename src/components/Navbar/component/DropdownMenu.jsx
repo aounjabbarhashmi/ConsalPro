@@ -75,6 +75,7 @@ function DropdownMenu(props) {
             style={{
               transformOrigin:
                 placement === "bottom" ? "center top" : "center bottom",
+              zIndex: 400,
             }}
           >
             <Paper>
