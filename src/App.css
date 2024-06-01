@@ -11,11 +11,11 @@
   }
   .stroke-text2 {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.199);
-    
   }
 }
 .bounce-once {
-  animation: bounce-once 0.76s ease-in-out 1;
+  animation: bounce-once 3s ease-in-out 1;
+  transition: all 1s ease-in-out;
 }
 @keyframes bounce-once {
   0% {
