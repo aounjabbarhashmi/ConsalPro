@@ -19,7 +19,6 @@
 html {
   overflow-x: hidden;
   font-size: clamp(5px, calc(0.5vw), 9px);
-  transition: all 1s ease-in-out;
 }
 
 body {
@@ -28,7 +27,6 @@ body {
   width: 100vw;
   background: #000;
   font-size: clamp(5px, calc(0.5vw), 9px);
-  transition: all 1s ease-in-out;
 }
 
 ::-webkit-scrollbar {
