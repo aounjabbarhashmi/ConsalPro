@@ -54,7 +54,7 @@ function NavbarComp() {
           navPosition
             ? ` ${
                 sideMenu ? "" : "bounce-once"
-              }  fixed bg-black z-30 top-0 shadow-lg pb-10 h-[80px]"`
+              }  fixed bg-black z-[100] top-0 shadow-lg pb-10 h-[80px]"`
             : " relative"
         }`}
       >

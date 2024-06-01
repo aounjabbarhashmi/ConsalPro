@@ -11,7 +11,7 @@
   }
   .stroke-text2 {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.199);
-    -webkit-text-fill-color: transparent;
+    
   }
 }
 .bounce-once {
