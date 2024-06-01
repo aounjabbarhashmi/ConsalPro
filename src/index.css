@@ -21,6 +21,7 @@ html {
   font-size: clamp(5px, calc(0.5vw), 9px);
   transition: all 1s ease-in-out;
 }
+
 body {
   min-width: 320px;
   min-height: 100vh;

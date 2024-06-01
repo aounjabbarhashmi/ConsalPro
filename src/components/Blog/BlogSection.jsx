@@ -34,12 +34,12 @@ function BlogSection() {
 
         <div className="flex justify-between  p-12 items-center gap-6">
           <img src="./images/Chevron--left.png" alt="" />
-          <div className="flex justify-center text-left  items-start gap-6">
+          <div className="flex justify-center text-left max-w-[1200px] w-full overflow-x-auto items-start gap-6">
             {" "}
             {data.map((item) => {
               return (
                 <>
-                  <div className="w-[300px]  flex-col flex p-4  gap-8 scale-90 transition-all duration-500 ease-in-out ">
+                  <div className="min-w-[300px]  flex-col flex p-4  gap-8 scale-90 transition-all duration-500 ease-in-out ">
                     <time
                       dateTime="January - 06th 2024 "
                       className="text-[1.6rem] text-[#B0B0B0] font-[400]"
