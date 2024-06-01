@@ -54,7 +54,7 @@ function NavbarComp() {
           navPosition
             ? ` ${
                 sideMenu ? "" : "bounce-once"
-              }  fixed bg-black z-30 top-0 shadow-lg pb-10 h-[80px]"`
+              }  sticky bg-black z-30 top-0 shadow-lg pb-10 h-[80px]"`
             : " relative"
         }`}
       >
@@ -69,7 +69,7 @@ function NavbarComp() {
           } `}
         >
           <h6
-            className="absolute top-20  cursor-pointer left-32 text-[20px]"
+            className="absolute top-20 md:hidden cursor-pointer left-32 text-[20px]"
             onClick={sideMenuHandler}
           >
             x
