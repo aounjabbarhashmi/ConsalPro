@@ -34,8 +34,8 @@ function NavbarComp() {
   ];
   const [navPosition, setNavPosition] = useState(false);
   const [sideMenu, setSideMenu] = useState(false);
-  const sideMenuHandler = () => {
-    setSideMenu(!sideMenu);
+  const sideMenuHandler = (param) => {
+    setSideMenu(param);
   };
   const scrollHandler = () => {
     if (window.scrollY > 100) {
@@ -70,7 +70,9 @@ function NavbarComp() {
         >
           <h6
             className="absolute top-20 md:hidden cursor-pointer left-32 text-[20px]"
-            onClick={sideMenuHandler}
+            onClick={() => {
+              sideMenuHandler(false);
+            }}
           >
             x
           </h6>
@@ -99,13 +101,14 @@ function NavbarComp() {
             );
           })}
         </ul>
+
         <img
           width={16}
           src="./icons/Menu.svg"
           className="mr-20 cursor-pointer"
           alt=""
           onClick={() => {
-            sideMenuHandler();
+            sideMenuHandler(true);
           }}
         />
       </div>
