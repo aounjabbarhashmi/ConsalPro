@@ -34,20 +34,22 @@ function BlogSection() {
 
         <div className="flex justify-between  p-12 items-center gap-6">
           <img src="./images/Chevron--left.png" alt="" />
-          <div className="flex justify-center text-left max-w-[1200px] w-full overflow-x-auto items-start gap-6">
-            {" "}
+          <div className="flex  text-left max-w-[1200px] w-full overflow-x-auto items-start gap-6">
             {data.map((item) => {
               return (
                 <>
-                  <div className="min-w-[300px]  flex-col flex p-4  gap-8 scale-90 transition-all duration-500 ease-in-out ">
+                  <div
+                    
+                    className="min-w-[300px]  flex-col flex p-4  gap-8 scale-90 transition-all duration-500 ease-in-out "
+                  >
                     <time
                       dateTime="January - 06th 2024 "
-                      className="text-[1.6rem] text-[#B0B0B0] font-[400]"
+                      className="text-[2rem] text-[#B0B0B0] font-[400]"
                     >
                       {item.date}
                     </time>
-                    <h1 className="text-[2.2rem] text-bold ">{item.heading}</h1>
-                    <p className="text-[1.6rem] text-[#B0B0B0] leading-[2.9rem] font-[400]">
+                    <h1 className="text-[4rem] text-bold ">{item.heading}</h1>
+                    <p className="text-[3rem] text-[#B0B0B0] leading-[2.9rem] font-[400]">
                       {item.content}
                     </p>
                     <img src={item.img} alt="" className="mt-4" />
@@ -56,7 +58,9 @@ function BlogSection() {
               );
             })}
           </div>
-          <img src="./images/Chevron--left.png" className="rotate-180" alt="" />
+          <img src="./images/Chevron--left.png" onClick={()=>{
+
+}} className="rotate-180" alt="" />
         </div>
       </div>
     </>
