@@ -1,4 +1,39 @@
+import { useEffect, useState } from "react";
+import CarousalCard from "./component/CarousalCard";
+const data = [
+  {
+    img: "./images/Rectangle.png",
+    heading: "Creative Design ",
+    subheading: "induction",
+  },
+  {
+    img: "./images/Rectangle.png",
+    heading: "App Development",
+    subheading: "induction",
+  },
+  {
+    img: "./images/Rectangle.png",
+    heading: "Web Development",
+    subheading: "induction",
+  },
+];
 function HeroSection() {
+  const [cardNum, setCardNum] = useState(0);
+  const [arrowState, setArrowState] = useState("next");
+  const CardNumHandler = (param) => {
+    setCardNum(param);
+  };
+  useEffect(() => {
+    if (cardNum == data.length - 1) {
+      setArrowState("pre");
+    }
+    if (cardNum < data.length - 1 && cardNum > 0) {
+      setArrowState("both");
+    }
+    if (cardNum == 0) {
+      setArrowState("next");
+    }
+  }, [cardNum]);
   return (
     <header className="text-white w-[70%] mx-auto   py-[40px] ">
       {/* main hero section title  */}
@@ -8,7 +43,7 @@ function HeroSection() {
           We are{" "}
           <img
             src="./images/SuperToroid-Black-Matte.png"
-            className="w-[10%] "
+            className="w-[10%] animate-move "
             alt=""
           />
         </span>
@@ -36,34 +71,44 @@ function HeroSection() {
       <div className=" z-[0] max-w-[500px] w-full aspect-square flex  items-center justify-evenly text-[#edbc5a41] bg-radial-gradient  absolute top-[0%] right-[0%]">
         <img
           src="./images/Spiral.png"
-          className="w-[20vw] absolute right-[10%] top-[20%]"
+          className="w-[20vw] absolute right-[10%] top-[20%] animate-spin2"
           alt="spiral"
         />
       </div>
       {/* carousal card section  */}
-      <div className="relative mt-28">
-        <div className="relative bg-[url(./images/Rectangle.png)]   z-1 bg-contain bg-no-repeat w-full max-w-[600px] aspect-video">
-          <div className=" flex-col absolute bottom-[10%] right-[10%] bg-center justify-center items-center inline-flex p-8 px-16 aspect-square rounded-full bg-[#EDBC5A]">
-            <img src="./icons/send.svg" alt="" width="30%" />
-            <h1 className="capitalize text-[2rem] text-black text-[400]">
-              explore <br /> more{" "}
-            </h1>
-          </div>
-        </div>
-        <div
-          className="text-white absolute left-[-10%] top-[45%]  z-[0]  inline-flex flex-col items-start p-4 border-b-2 "
-          style={{
-            borderColor:
-              "linear-gradient(top right 120deg, rgba(255, 255, 255, 0) 1.51%, #EDBC5A 105.37%))",
+      <CarousalCard key={cardNum} data={data[cardNum]} />
+      <div className="flex gap-2">
+        <button
+          className={`${
+            arrowState == "pre" || arrowState == "both"
+              ? "bg-[#EDBC5A] cursor-pointer active:scale-95"
+              : "bg-[#131313] cursor-default"
+          }   p-6 w-24 transition-all duration-300 ease-linear `}
+          onClick={() => {
+            if (arrowState == "pre" || arrowState == "both") {
+              CardNumHandler(cardNum - 1);
+            }
           }}
         >
-          <h5 className="text-[1.6rem] uppercase text-[#B0B0B0]">induction</h5>
-          <h1 className=" text-[3.8rem] ">Creative Design </h1>
+          <img src="./images/Arrow.png" className="rotate-[212deg]" alt="" />
+        </button>
+        <div
+          className={`${
+            arrowState == "next" || arrowState == "both"
+              ? "bg-[#EDBC5A] cursor-pointer active:scale-95"
+              : "bg-[#131313] cursor-default"
+          }  p-6 w-24 transition-all duration-300 ease-linear `}
+          onClick={() => {
+            if (arrowState == "next" || arrowState == "both") {
+              CardNumHandler(cardNum + 1);
+            }
+          }}
+        >
+          <img src="./images/Arrow.png" className="rotate-[35deg]" alt="" />
         </div>
       </div>
-
       {/* signature section  */}
-      <div className="flex justify-end mt-[-130px]">
+      <div className="flex max-xl:mt-[80px] justify-end mt-[-130px]">
         <div className=" max-w-[300px] w-full">
           <p className="italic text-[1.6rem] font-[500]  text-left text-[#B0B0B0] ">
             Proin efficitur, mauris vel condimentum pulvinar, velit orci

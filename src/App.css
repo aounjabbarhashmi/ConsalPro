@@ -14,7 +14,9 @@
     -webkit-text-fill-color: transparent;
   }
 }
-
+.bounce-once {
+  animation: bounce-once 0.76s ease-in-out 1;
+}
 @keyframes bounce-once {
   0% {
     transform: translateY(-125%);
@@ -23,8 +25,50 @@
   100% {
     transform: translateY(0);
   }
- 
 }
-.bounce-once {
-  animation: bounce-once 0.76s ease-in-out 1;
+.animate-move {
+  animation: animate-move 3s ease-in-out infinite;
+  transition: all 3s ease-in-out;
+}
+@keyframes animate-move {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin2 {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes animate-horizontal {
+  0% {
+    left: -100%;
+  }
+  90% {
+    left: -10%;
+  }
+  100% {
+    left: -15%;
+  }
+}
+.animate-horizontal {
+  animation: animate-horizontal 1s linear 1;
+  transition: all 3s ease-in-out;
+}
+@keyframes pulse {
+    50% {
+        opacity: .5;
+    }
+}
+.animate-pulse2 {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) 1;
 }

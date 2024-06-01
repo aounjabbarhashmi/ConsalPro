@@ -1,5 +1,5 @@
 import BlogSection from "../components/Blog/BlogSection";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/Hero/HeroSection";
 import IdeaSection from "../components/IdeaSection/IdeaSection";
 import NavbarComp from "../components/Navbar/NavbarComp";
 import PlaySection from "../components/play/PlaySection";
