@@ -50,7 +50,7 @@ function NavbarComp() {
   return (
     <>
       <div
-        className={`w-full flex px-12 z-[1] py-4  justify-between items-center pt-20  h-[70px] ${
+        className={`w-full flex px-12 z-[100] py-4  justify-between items-center pt-20  h-[70px] ${
           navPosition
             ? ` ${
                 sideMenu ? "" : "bounce-once"

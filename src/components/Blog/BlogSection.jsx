@@ -22,7 +22,7 @@ function BlogSection() {
   ];
   return (
     <>
-      <div className="text-white mt-[280px] max-[500px]:mt-[400px]">
+      <div className="text-white mt-[350px] max-[500px]:mt-[400px]">
         <div>
           <p className="text-[1.6rem] text-[#EDBC5A] font-[300] tracking-wider">
             Blog & News
@@ -38,10 +38,7 @@ function BlogSection() {
             {data.map((item) => {
               return (
                 <>
-                  <div
-                    
-                    className="min-w-[300px]  flex-col flex p-4  gap-8 scale-90 transition-all duration-500 ease-in-out "
-                  >
+                  <div className="min-w-[300px]  flex-col flex p-4  gap-8 scale-90 transition-all duration-500 ease-in-out ">
                     <time
                       dateTime="January - 06th 2024 "
                       className="text-[2rem] text-[#B0B0B0] font-[400]"
@@ -58,9 +55,12 @@ function BlogSection() {
               );
             })}
           </div>
-          <img src="./images/Chevron--left.png" onClick={()=>{
-
-}} className="rotate-180" alt="" />
+          <img
+            src="./images/Chevron--left.png"
+            onClick={() => {}}
+            className="rotate-180"
+            alt=""
+          />
         </div>
       </div>
     </>
