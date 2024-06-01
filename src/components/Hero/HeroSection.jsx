@@ -35,7 +35,7 @@ function HeroSection() {
     }
   }, [cardNum]);
   return (
-    <header className="text-white w-[70%] mx-auto   py-[40px] ">
+    <header className="text-white w-[70%] mx-auto  mt-20  py-[40px] ">
       {/* main hero section title  */}
       <h1 className="text-left  text-[14rem]  max-sm:text-[8rem] font-bold uppercase leading-[15rem]">
         <span className="flex  gap-12">
