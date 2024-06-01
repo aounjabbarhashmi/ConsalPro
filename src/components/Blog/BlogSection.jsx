@@ -63,24 +63,24 @@ function BlogSection() {
           </h1>
         </div>
 
-        <div className="flex justify-between  p-12 items-center gap-6">
+        <div className="flex justify-between mt-16 p-12 items-center gap-6">
           <img
             src="./images/Chevron--left.png"
             alt=""
             onClick={() => {
               if (scroll != 0) {
-                setScroll(scroll - 300);
+                setScroll(scroll - 400);
               }
             }}
           />
           <div
             ref={scrollDiv}
-            className="flex text-left max-w-[1200px] w-full overflow-x-auto items-start gap-6"
+            className="flex text-left  pl-24 max-w-[1200px]  w-full overflow-x-auto items-start gap-6"
           >
             {data.map((item) => {
               return (
                 <>
-                  <div className="min-w-[300px] max-w-[350px]  flex-col flex p-4  gap-8 scale-90 transition-all duration-500 ease-in-out ">
+                  <div className="min-w-[400px]   flex-col flex p-4  gap-8 scale-90 transition-all duration-500 ease-in-out ">
                     <time
                       dateTime="January - 06th 2024 "
                       className="text-[2rem] text-[#B0B0B0] font-[400]"
@@ -88,7 +88,7 @@ function BlogSection() {
                       {item.date}
                     </time>
                     <h1 className="text-[4rem] text-bold ">{item.heading}</h1>
-                    <p className="text-[3rem] text-[#B0B0B0] leading-[2.9rem] font-[400]">
+                    <p className="text-[2.2rem] text-[#B0B0B0] leading-[2.9rem] font-[400]">
                       {item.content}
                     </p>
                     <img src={item.img} alt="" className="mt-4" />
@@ -104,7 +104,7 @@ function BlogSection() {
                 scroll <
                 Math.floor(scrollDiv.current.scrollWidth / 100) * 100
               ) {
-                setScroll(scroll + 300);
+                setScroll(scroll + 400);
               }
             }}
             className="rotate-180"
