@@ -2,8 +2,14 @@ function PlaySection() {
   return (
     <>
       {" "}
-      <div className="relative flex justify-center items-center  w-full bg-no-repeat bg-cover p-12 py-96 bg-center bg-[url(./images/backgroundimg.png)]">
-        <div className="max-w-[200px] w-full max-md:max-w-[80px] max-lg:max-w-[100px] animate-pulse text-[2.8rem] flex justify-center items-center  text-white text-center bg-no-repeat bg-contain bg-center aspect-square bg-[url('./images/wavyFlower.png')]">
+      <div
+        style={{ backgroundImage: "url(./images/backgroundimg.png)" }}
+        className="relative flex justify-center items-center  w-full bg-no-repeat bg-cover p-12 py-96 bg-center"
+      >
+        <div
+          style={{ backgroundImage: "url(./images/wavyFlower.png)" }}
+          className="max-w-[200px] w-full max-md:max-w-[80px] max-lg:max-w-[100px] animate-pulse text-[2.8rem] flex justify-center items-center  text-white text-center bg-no-repeat bg-contain bg-center aspect-square "
+        >
           Play
         </div>
         <div className="flex min-h-[100px] max-[500px]:flex-wrap  absolute top-[80%] items-start w-full pl-28 gap-3 justify-between">
