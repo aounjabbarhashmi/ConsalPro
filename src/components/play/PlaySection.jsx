@@ -2,7 +2,7 @@ function PlaySection() {
   return (
     <>
       {" "}
-      <div className="relative flex justify-center items-center  w-full bg-no-repeat bg-cover p-12 py-96 bg-center bg-[url('./images/backgroundimg.png')]">
+      <div className="relative flex justify-center items-center  w-full bg-no-repeat bg-cover p-12 py-96 bg-center bg-[url(./images/backgroundimg.png)]">
         <div className="max-w-[200px] w-full max-md:max-w-[80px] max-lg:max-w-[100px] animate-pulse text-[2.8rem] flex justify-center items-center  text-white text-center bg-no-repeat bg-contain bg-center aspect-square bg-[url('./images/wavyFlower.png')]">
           Play
         </div>

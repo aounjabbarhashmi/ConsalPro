@@ -7,7 +7,7 @@ function CarousalCard(props) {
       <div className="relative mt-28">
         <div
           style={{ backgroundImage: "url(./images/Rectangle.png)" }}
-          className={`relative animate-pulse2 bg-[url(./images/Rectangle.png)]   z-1 bg-contain bg-no-repeat w-full max-w-[600px] aspect-video`}
+          className={`relative animate-pulse2   z-1 bg-contain bg-no-repeat w-full max-w-[600px] aspect-video`}
         >
           <div className=" flex-col hover:scale-90 transition-all duration-300 ease-linear cursor-pointer absolute bottom-[10%] right-[10%] bg-center justify-center items-center inline-flex p-8 px-16 aspect-square rounded-full bg-[#EDBC5A]">
             <img src="./icons/send.svg" alt="" width="30%" />
