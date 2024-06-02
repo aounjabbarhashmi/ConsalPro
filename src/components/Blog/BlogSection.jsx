@@ -75,7 +75,7 @@ function BlogSection() {
           />
           <div
             ref={scrollDiv}
-            className="flex text-left  pl-24 max-w-[1200px]  w-full overflow-x-auto items-start gap-6"
+            className="flex text-left max-md:pl-2  pl-24 max-w-[1200px]  w-full overflow-x-auto items-start gap-6"
           >
             {data.map((item) => {
               return (
